@@ -2,11 +2,11 @@ console.log("Cargando Acordión...");
 
 const dataAccordion = [
   {
-    title: "Nuevos lanzamientos",
+    title: "Terapia de Lesiones",
     desc: "Ofrecemos lo último en videojuegos.",
   },
   {
-    title: "Juegos Retro",
+    title: "Cuidados Post-Operatorios",
     desc: "Contamos con una gran extensión de juegos retro.",
   },
   {

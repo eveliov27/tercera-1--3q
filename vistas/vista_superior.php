@@ -20,7 +20,7 @@
             <div class="menu-normal">
 
             
-            <a href="./inicio.php">Inicio</a>
+            <a href="./index.php">Inicio</a>
             <a href="./servicios.php">Servicios</a>
             <a href="./sobre_nosotros.php">Sobre Nosotros</a>
             <a href="./contacto.php">Contacto</a>
