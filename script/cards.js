@@ -2,25 +2,27 @@ console.log("Cards Cargado");
 
 const dataCards = [
     {
-        "title": "Juego del año",
-        "url_image": "./img/juego.webp",
-        "desc": "El mejor del año, esta vez fue otorgado para un título muy importante lanzado en julio pasado para la consola Nintendo.",
-        "cta": "Mostrar más...",
+        "title": "Terapia de Lesiones",
+        "url_image": "http://localhost/proyectos/proyectos/tercera-1--3q/img/logo_fisio.PNG",
+        "desc": `Contamos con paquetes de sesiones de terapia para asegurarnos de una mejor recuperacion de tu lesion.
+
+        Agenda tu cita hoy mismo.`,
+        "cta": "Agendar...",
         "link": "./contacto.php"
     },
     {
-        "title": "Xbox",
-        "url_image": "./img/xbox.png",
-        "desc": "Variedad de nuevos títulos",
+        "title": "Cuidados Post-operatorios",
+        "url_image": "http://localhost/proyectos/proyectos/tercera-1--3q/img/rehabilitacion.jpg",
+        "desc": "Recuperate de una cirugía con nuestros planes personalizados.",
         "cta": "Mostrar más...",
-        "link": "./xbox.php"
+        "link": "./servicios.php"
     },
     {
-        "title": "Playstation",
-        "url_image": "./img/playstation.jpg",
-        "desc": "Muchos juegos exclusivos",
+        "title": "Quienes somos",
+        "url_image": "ttp://localhost/proyectos/proyectos/tercera-1--3q/img/terapia_fisica.jpg ",
+        "desc": "Conoce nuestros fisios, un poco de su experiencia y resultados.",
         "cta": "Mostrar más...",
-        "link": "./ps5.php"
+        "link": "./sobre_nosotros.php"
     }
 ];
 
