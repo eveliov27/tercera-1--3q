@@ -68,6 +68,7 @@ menu {
     border-top: solid 1px white;
     box-shadow: 1px 1px 3px 0 white;
     margin: 20px;
+    background-color: black;
 }  
 
 .accordion-item:hover {
@@ -87,6 +88,9 @@ menu {
     font-style: normal;
     cursor: pointer;
     margin: 20px;
+    box-shadow: 3px 3px 6px 0 white;
+    border-radius: 10px;
+    background-color: black;
 }
 .accordion-title:hover {
     transform: scale(1.01);
@@ -102,14 +106,103 @@ menu {
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 20px 40px;
-    background-color: rgb(18, 240, 240);
+    background-color: gray;
     border-top: 1px solid black;
     text-align: left;
     font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
-    white-space: pre-line;
+    white-space: pre-line;  
+    padding: 0 20px;
+    box-shadow: 3px 3px 6px 0 white;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
 }
 
+.card-item {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+    box-shadow: 3px 3px 6px 0 white;
+    align-items: center;
+
+}
+.card-item:hover {
+    transform: translateY(-10px)scale(1.0.5);
+}
+.card-item img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.card-info {
+    height: 80%;
+    width:80%;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    background-color: black;
+}
+.card-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    background-color: black;
+
+}
+.card-desc {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    white-space: pre-line;  /* This preserves line breaks */
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    background-color: black;
+}
+.card-cta {
+    width: 120px;
+    height: 30px;
+    color: #918f8f;
+    text-decoration: none;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px 0 white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    background-color: black;
+    
+}
+.card-cta:hover {
+    transform: scale(1.01)translateX(3px)translateY(-3px);
+}
 .accordion-text {
     max-width: 800px;
 }
@@ -198,6 +291,7 @@ menu {
         font-family: 'Space Grotesk', sans-serif;
         font-style: normal;
         white-space: pre-line;
+        
     }
     .accordion-title {
         font-size: 70px;
@@ -224,12 +318,14 @@ menu {
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color: #fff;
+    background-color: rgb(19, 19, 19);
     border-radius: 8px;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-family: 'Space Grotesk', sans-serif;
     transition: transform 0.2s ease;
+    border: 1px solid #ddd;
+    border-color: white;
 }
 
 .map-link:hover {
@@ -246,4 +342,130 @@ menu {
         padding: 15px;
         font-size: 16px;
     }
+}
+
+/* Estilo de las cards de contactos */
+.contact-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: black;
+}
+
+.contact-list .card-item {
+    width: 1080px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.contact-list .card-item:hover {
+    transform: translateY(-10px);
+}
+
+.contact-list .card-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.contact-list .card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-list .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+}
+
+.contact-list .card-desc {
+    color: white;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-line;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-list {
+        padding: 1rem;
+    }
+
+    .contact-list .card-item {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px;
+    }
+}
+
+html, body {
+    background-color: #000; /* black background for all pages */
+    color: #fff;            /* default text color for contrast */
+    min-height: 100%;
+}
+
+/* WhatsApp contact button — dark background, white text */
+.contact-whatsapp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-whatsapp a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: transparent; /* keep page black */
+    color: #ffffff;                 /* white letters */
+    border: 2px solid rgba(255,255,255,0.12);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: transform .15s ease, background-color .15s ease;
+}
+
+.contact-whatsapp a:hover {
+    transform: translateY(-4px);
+    background-color: rgba(255,255,255,0.03);
+}
+
+.contact-whatsapp .whatsapp-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: none; /* keep original icon colors; change if you need white icon */
+}
+
+.contact-whatsapp .whatsapp-text {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .contact-whatsapp a { padding: 10px 12px; gap: 8px; }
+    .contact-whatsapp .whatsapp-text { font-size: 14px; }
 }
